@@ -32,7 +32,7 @@ This project implements a blockchain-based carbon credit provenance system that 
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/VidyasagarDudekula/CarbonCreditTradingSystem.git
    cd CarbonCreditTradingSystem
    ```
 
