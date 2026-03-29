@@ -10,7 +10,7 @@ interface ICarbonCredit {
     
     // ==========================================
     // Events (Provenance Tracking)
-    // Designed by: Vidya Sagar Dudekula, Vaibhav Kokkera Vasu
+    // Designed by: Vidya Sagar Dudekula
     // ==========================================
     
     event CreditIssued(uint256 indexed creditId, address indexed issuer, uint256 amount);
