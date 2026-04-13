@@ -42,25 +42,37 @@ This project implements a blockchain-based carbon credit provenance system that 
    npm install
    ```
 
-3. **Compile Smart Contracts:**
+   > **Troubleshooting Hardhat Toolbox Version:**
+   > This project uses Hardhat version 2. If you try to run commands and get an error saying *"You installed the latest version of @nomicfoundation/hardhat-toolbox, which does not work with Hardhat 2 nor 3"*, you must run the following command to sync your toolbox version:
+   > ```bash
+   > npm install --save-dev "@nomicfoundation/hardhat-toolbox@hh2"
+   > ```
+
+3. **Run the Intermediate Demo:**
+   This script demonstrates the complete end-to-end lifecycle (Issuance -> Listing -> Purchasing -> Retirement) of a Carbon Credit directly in your terminal without needing a frontend interaction.
+   ```bash
+   npx hardhat run scripts/demo.js
+   ```
+
+4. **Compile Smart Contracts:**
    ```bash
    npx hardhat compile
    ```
 
-4. **Run Tests:**
+5. **Run Tests:**
    Ensure the smart contract logic is sound before deployment.
    ```bash
    npx hardhat test
    ```
 
-5. **Deploy to Local Network:**
+6. **Deploy to Local Network:**
    Start a local Hardhat node and deploy the contract.
    ```bash
    npx hardhat node
    npx hardhat run scripts/deploy.js --network localhost
    ```
 
-6. **Deploy to Polygon Amoy Testnet:**
+7. **Deploy to Polygon Amoy Testnet:**
    Update your `.env` file with your `PRIVATE_KEY` and `ALCHEMY_API_KEY` or `INFURA_API_KEY`, then run:
    ```bash
    npx hardhat run scripts/deploy.js --network amoy
